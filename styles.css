@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #eae7dc;  /* Light grayish background */
+    color: #e85a4f;  /* Main text color */
     line-height: 1.6;
 }
 
@@ -18,11 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-color: #333;
-    color: #f5f5f5;
-    position: fixed;
-    width: 90%;
-    z-index: 1000;
+    background-color: #d8c3a5;  /* Dark header background */
+    color: #e98074;  /* Header text color */
 }
 
 header h1 {
@@ -31,7 +28,7 @@ header h1 {
 }
 
 nav a {
-    color: #f5f5f5;
+    color: #e98074;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 600;
@@ -39,17 +36,17 @@ nav a {
 }
 
 nav a:hover {
-    color: #a5a5a5;
+    color: #e85a4f;
 }
 
 /* Main Content */
 main {
-    margin-top: 80px; /* To account for fixed header */
+    padding: 20px 0;
 }
 
 #landing {
     height: 100vh;
-    background-color: #e6e6e6;
+    background-color: #eae7dc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +57,6 @@ main {
 
 #portfolio {
     padding: 50px 5%;
-    background-color: #fff;
 }
 
 #portfolio h2 {
@@ -68,7 +64,7 @@ main {
     margin-bottom: 50px;
     font-size: 2.5em;
     font-weight: 600;
-    color: #555;
+    color: #d8c3a5;
 }
 
 .project-card {
@@ -76,7 +72,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d8c3a5;
     padding-bottom: 20px;
 }
 
@@ -90,38 +86,38 @@ main {
     flex: 1;
     font-size: 1.2em;
     font-weight: 600;
-    color: #666;
+    color: #d8c3a5;
 }
 
 .project-card p {
     flex: 2;
-    color: #888;
+    color: #e85a4f;
     margin: 10px 0;
 }
 
 .project-card a {
-    color: #0077cc;
+    color: #e98074;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-card a:hover {
-    color: #0055aa;
+    color: #d8c3a5;
 }
 
 /* Footer */
 footer {
     padding: 20px 5%;
-    background-color: #333;
-    color: #f5f5f5;
+    background-color: #d8c3a5;
+    color: #e98074;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 footer a {
-    color: #f5f5f5;
+    color: #e98074;
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
@@ -129,7 +125,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #a5a5a5;
+    color: #e85a4f;
 }
 
 /* Responsiveness */
