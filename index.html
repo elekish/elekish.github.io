@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishita Biswas - My Portfolio</title>
-   <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
     <style>
         body {
@@ -21,8 +22,15 @@
             text-align: center;
         }
 
-        h1 {
+        section h1 {
             font-size: 36px;
+            margin: 0;
+            text-decoration: underline;
+        }
+
+        .title {
+            font-size: 4em;
+            font-weight: 300;
             margin: 0;
         }
 
@@ -39,9 +47,18 @@
             font-size: 18px;
         }
 
+        nav .nav-links:hover {
+            text-decoration: underline;
+            scale: 1.1;
+            color: beige;
+        }
+
+        nav .nav-links:focus {
+            color: #fff;
+        }
+
         section {
-            padding: 40px;
-            height:100vh
+            padding: 5% 5%;
         }
 
         .project {
@@ -50,9 +67,24 @@
             padding: 20px;
         }
 
+        .project-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .project-link:hover {
+            color: beige;
+            
+        }
+
         .project h2 {
             font-size: 24px;
             margin: 0;
+        }
+
+        .project h2:hover {
+            scale : 1.1;
+            margin-left: 4.5%;
         }
 
         .project p {
@@ -64,73 +96,101 @@
             padding: 20px;
             text-align: center;
         }
-    </style> 
+
+        li {
+            padding: 0.75% 0;
+        }
+
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Ishita Biswas</h1>
+        <h1 class="title">Ishita Biswas</h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a class="nav-links" href="#about">About</a>
+            <a class="nav-links" href="#projects">Projects</a>
+            <a class="nav-links" href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi. <br> You will find me in the hallowed halls of Jadavpur University, a place where intellect thrives and innovation reigns supreme, in the Department of Instrumentation and Electronics Engineering. <br>The alchemy of code and creativity is my muse, as I sculpt elegant solutions from lines of logic.</p>
-     <br>
+        <h1>About Me</h1>
+        <p>Hi. <br> You will find me in the hallowed halls of Jadavpur University, a place where intellect thrives and
+            innovation reigns supreme, in the Department of Instrumentation and Electronics Engineering. <br>The alchemy
+            of code and creativity is my muse, as I sculpt elegant solutions from lines of logic.</p>
+        <br>
         Some of my achievenments ans works include:<br>
         <ul>
             <li>I was ranked 139 in Techgig Geek Goddess 2022, a coding even organised by Techgig.</li>
             <li>I was ranked 1681 in CodeKaze Sept'23, organised by coding Ninjas.</li>
-            <li>I was ranked 2910 in Google Kickstart 2022, a competitive programming competition organised by google.</li>
+            <li>I was ranked 2910 in Google Kickstart 2022, a competitive programming competition organised by google.
+            </li>
             <li>I have a machine learning course certification from Kaggle.</li>
             <li>I have qualified in Smart India Hackathon 2023 first round.</li>
-            <li>I have worked as a volunteer in AICSSYC, IEEE Jadavpur Branch, which was a three day event that tookplace in Mandarmani. I was responsible for gathering sponsors and coordination of event timings. </li>
+            <li>I have worked as a volunteer in AICSSYC, IEEE Jadavpur Branch, which was a three day event that
+                tookplace in Mandarmani. I was responsible for gathering sponsors and coordination of event timings.
+            </li>
             <li>I have also worked as an event coordinator in the Tech fest Srijan of my college.</li>
         </ul>
-        Apart from all these I enjoy Table tennis and love creating new content at Youtube.
-    
+        Apart from all these I enjoy Table tennis and love creating new content at <u><i><a class="project-link" href="https://www.youtube.com/">Youtube</a></i></u>
+
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h1>My Projects</h1>
         <div class="project">
-            <h2>Housing Rent Prediction</h2>
-            <p>In the heart of the digital wilderness, this project commences with the promise of deciphering the cryptic world of real estate pricing.
+            <h2><a class="project-link" href="https://github.com/elekish/Housing-price-prediction" target="_blank">Housing Rent Prediction</a></h2>
+            <p>In the heart of the digital wilderness, this project commences with the promise of deciphering the
+                cryptic world of real estate pricing.
                 <br>
                 <br>
                 <strong>The Tale goes as:</strong><br>
-                <ul>
-                    <li><em>The Data Chronicles:</em>The project's journey commences with a treasure chest of housing data, rich with property features, locations, and, most importantly, their prices. </li>
-                    <li><em>The Algorithmic Odyssey:</em> The journey takes us through the intricate woods of regression models, decision trees, and ensemble techniques.</li>
-                    <li><em>The Test of Fortitude:</em>The models are pit against rigorous trials, splitting the data into training and testing sets. Metrics like RMSE and MAE become the yardsticks by which success is measured. </li>
-                    <li><em> The Grand Finale:</em>A web application or API is a gateway to share the magic with the world.</li>
-                </ul>
+            <ul>
+                <li><em>The Data Chronicles:</em>The project's journey commences with a treasure chest of housing data,
+                    rich with property features, locations, and, most importantly, their prices. </li>
+                <li><em>The Algorithmic Odyssey:</em> The journey takes us through the intricate woods of regression
+                    models, decision trees, and ensemble techniques.</li>
+                <li><em>The Test of Fortitude:</em>The models are pit against rigorous trials, splitting the data into
+                    training and testing sets. Metrics like RMSE and MAE become the yardsticks by which success is
+                    measured. </li>
+                <li><em> The Grand Finale:</em>A web application or API is a gateway to share the magic with the world.
+                </li>
+            </ul>
             </p>
         </div>
         <div class="project">
-            <h2>Movie Recommendation System</h2>
-            <p>Welcome to the world of Movie Magic! I've embarked on a thrilling journey to create a Movie Recommendation System that transforms movie-watching into an interactive adventure. In this narrative, you become the protagonist, and your preferences shape the story.
-            <br>
+            <h2><a class="project-link" href="https://github.com/elekish/Movie_Recommendation-System" target="_blank">Movie Recommendation
+                    System</a> </h2>
+            <p>Welcome to the world of Movie Magic! I've embarked on a thrilling journey to create a Movie
+                Recommendation System that transforms movie-watching into an interactive adventure. In this narrative,
+                you become the protagonist, and your preferences shape the story.
                 <br>
-<strong>The Tale Unfolds</strong>:<br>
+                <br>
+                <strong>The Tale Unfolds</strong>:<br>
 
-Once upon a time, in the land of cinematic wonders, a recommendation system emerged. Its mission was to provide movie enthusiasts with the ultimate viewing experience. But this wasn't just any system; it was designed to understand you, the viewer.
-           <ul>
-               <li><em>Discover Your Movie Persona</em>: You share your preferences and viewing history, and the system becomes your guide, helping you discover your unique movie persona.</li>
-               <li><em>The Content Quest</em>: Utilizing content filtering, the system collaborates with fellow movie lovers to unearth hidden gems and popular classics alike.</li>
-               <li><em>The Data Chronicles</em>: Our journey involves a treasure trove of movie data, which we meticulously preprocess to create a seamless viewing experience.</li>
-               <li><em>The Magic Algorithm</em>s: Along the way, we encounter recommendation algorithms that analyze your choices, including user-based and item-based filtering</li>
-               <li><em>Judgment Day</em>: As the adventure unfolds, we face a critical juncture - the evaluation stage, where the system's performance is assessed to ensure your movie journey is nothing short of magical.</li>
-           </ul>
+                Once upon a time, in the land of cinematic wonders, a recommendation system emerged. Its mission was to
+                provide movie enthusiasts with the ultimate viewing experience. But this wasn't just any system; it was
+                designed to understand you, the viewer.
+            <ul>
+                <li><em>Discover Your Movie Persona</em>: You share your preferences and viewing history, and the system
+                    becomes your guide, helping you discover your unique movie persona.</li>
+                <li><em>The Content Quest</em>: Utilizing content filtering, the system collaborates with fellow movie
+                    lovers to unearth hidden gems and popular classics alike.</li>
+                <li><em>The Data Chronicles</em>: Our journey involves a treasure trove of movie data, which we
+                    meticulously preprocess to create a seamless viewing experience.</li>
+                <li><em>The Magic Algorithm</em>s: Along the way, we encounter recommendation algorithms that analyze
+                    your choices, including user-based and item-based filtering</li>
+                <li><em>Judgment Day</em>: As the adventure unfolds, we face a critical juncture - the evaluation stage,
+                    where the system's performance is assessed to ensure your movie journey is nothing short of magical.
+                </li>
+            </ul>
             </p>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h1>Contact Me</h1>
         <p><a href=mailto:rosellaevenstar@gmail.com>Click Here.</a></p>
     </section>
 
@@ -138,4 +198,5 @@ Once upon a time, in the land of cinematic wonders, a recommendation system emer
         &copy; 2023 Ishita Biswas, All rights reserved.
     </footer>
 </body>
+
 </html>
